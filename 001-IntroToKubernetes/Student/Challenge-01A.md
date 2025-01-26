@@ -100,7 +100,7 @@ When the deployment is complete, you can ssh into the build machine using port 2
 
 # Steps to complete
 
-1. I'am already running a Ubuntu desktop, so i have built the apps locally using a DevBox configuration.
+1. I am already running a Ubuntu desktop, so i have built the apps locally using a DevBox configuration.
 
 ```shell
 devbox init
