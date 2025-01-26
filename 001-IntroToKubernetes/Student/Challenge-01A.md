@@ -96,3 +96,13 @@ When the deployment is complete, you can ssh into the build machine using port 2
 - [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
 - [How to Dockerize a Node.js application](https://buddy.works/guides/how-dockerize-node-application)
 - [Why and How To Containerize Modern Node.js Applications](https://www.cuelogic.com/blog/why-and-how-to-containerize-modern-nodejs-applications)
+
+
+# Steps to complete
+
+1. I'am already running a Ubuntu desktop, so i have built the apps locally using a DevBox configuration.
+
+```shell
+devbox init
+devbox add nodePackages_latest.npm@10.8.3
+```
