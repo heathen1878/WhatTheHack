@@ -121,10 +121,20 @@ cd ../content-web
 npm install
 node ./server.js &
 
+cd ../../
+
 # To kill off the locally running instances
 ps | grep node
 kill [pid]
 
+# Starting Docker containers locally
+docker compose -f Student/Resources/Challenge-01/dockercompose.yml up -d
+
+# Test
+# Browse to http://localhost:3000 and http://localhost:3001/speakers
+
+# Shutdown containers
+docker compose -f Student/Resources/Challenge-01/dockercompose.yml down
 ```
 
 
