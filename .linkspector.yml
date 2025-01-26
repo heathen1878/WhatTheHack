@@ -1,5 +1,5 @@
 dirs:
-  - 001-IntroToKubernetes
+  - ./001-IntroToKubernetes
 ignorePatterns:
   - pattern: 'http://----001IntroToAKS-links-----"'
   - pattern: '^http://content-api:3001'

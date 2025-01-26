@@ -103,8 +103,8 @@ When the deployment is complete, you can ssh into the build machine using port 2
 1. I am already running a Ubuntu desktop, so i have built the apps locally using a DevBox configuration.
 
 ```shell
-devbox init
-
+cd ./WhatTheHack/001-IntroToKubernetes
+devbox shell
 # See devbox.json for installed applications
 
 cd Resources/Challenge-01
@@ -120,6 +120,11 @@ export CONTENT_API_URL="http://localhost:3001"
 cd ../content-web
 npm install
 node ./server.js &
+
+# To kill off the locally running instances
+ps | grep node
+kill [pid]
+
 ```
 
 
