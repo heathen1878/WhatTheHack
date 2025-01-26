@@ -2,7 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
   "packages": [
     "nodePackages_latest.npm@10.8.3",
-    "starship@1.21.1"
+    "starship@1.21.1",
+    "npm-check@6.0.1",
+    "nodejs@23.6.1"
   ],
   "shell": {
     "init_hook": [

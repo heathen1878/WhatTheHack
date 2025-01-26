@@ -19,5 +19,4 @@ jobs:
         with:
           reporter: github-pr-review
           fail_level: any
-          config_file: .checklinks_config.yml
                

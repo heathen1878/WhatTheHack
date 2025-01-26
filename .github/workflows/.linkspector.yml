@@ -1,0 +1,6 @@
+dirs:
+  - 001-IntroToKubernetes
+ignorePatterns:
+  - pattern: 'http://----001IntroToAKS-links-----"'
+  - pattern: '^http://content-api:3001'
+  - pattern: '^http://localhost:3001'

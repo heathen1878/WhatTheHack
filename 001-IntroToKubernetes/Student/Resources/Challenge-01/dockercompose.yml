@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: ./content-api
+      dockerfile: dockerfile
+  web:
+    build:
+      context: ./content-web
+      dockerfile: dockerfile
+    environment:
+      - CONTENT_API_URL=http://localhost:3001

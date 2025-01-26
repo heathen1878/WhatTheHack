@@ -104,5 +104,22 @@ When the deployment is complete, you can ssh into the build machine using port 2
 
 ```shell
 devbox init
-devbox add nodePackages_latest.npm@10.8.3
+
+# See devbox.json for installed applications
+
+cd Resources/Challenge-01
+
+cd content-api
+npm install
+
+node ./server.js &
+
+# Set the content api env var
+export CONTENT_API_URL="http://localhost:3001"
+
+cd ../content-web
+npm install
+node ./server.js &
 ```
+
+
