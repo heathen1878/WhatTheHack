@@ -93,8 +93,8 @@ When the deployment is complete, you can ssh into the build machine using port 2
 
 ## Learning Resources
 
-- [Dockerising a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [How to Dockerize a Node.js application](https://buddy.works/guides/how-dockerize-node-application)
+- [Dockerising a Node.js web app](https://docs.docker.com/guides/nodejs/containerize/)
+- [How to Dockerise a Node.js application](https://buddy.works/guides/how-dockerize-node-application)
 - [Why and How To Containerize Modern Node.js Applications](https://www.cuelogic.com/blog/why-and-how-to-containerize-modern-nodejs-applications)
 
 
