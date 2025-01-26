@@ -40,3 +40,6 @@ If you plan to use the Azure Cloud Shell, you should upload the `Resources.zip` 
 1. You have a bash shell at your disposal (WSL, Mac, Linux or Azure Cloud Shell)
 1. Running `az --version` shows the version of your Azure CLI
 1. Visual Studio Code is installed.
+
+
+Using __DevBox__ I have packaged all the required tools into a Git Repo which enables a portable shell with all the required tooling. [here](https://github.com/heathen1878/tooling)
