@@ -111,6 +111,7 @@ DBMS
 DBs
 DEK
 DES
+DevBox
 DICOM
 DNAT
 DNS
@@ -131,7 +132,8 @@ DevSecOps
 DirectQuery
 Dockerfile
 Dockerfiles
-Dockerize
+Dockerise
+Dockerising
 Dodgeball
 DocumentDB
 Dodgeball
@@ -150,6 +152,8 @@ FHIR
 FQDN
 FQDNs
 FSLogix
+FabMedical
+fabmedical
 FastTrack
 FileStorage
 FirstName
