@@ -1,0 +1,25 @@
+services:
+  api:
+    container_name: api
+    build:
+      context: ./content-api
+      dockerfile: dockerfile
+    networks:
+      - fabmedical
+    ports:
+      - "3001:3001"
+  web:
+    container_name: web
+    build:
+      context: ./content-web
+      dockerfile: dockerfile
+    environment:
+      - CONTENT_API_URL=http://api:3001
+    depends_on:
+      - api
+    networks:
+      - fabmedical
+    ports:
+      - "3000:3000"
+networks:
+  fabmedical:

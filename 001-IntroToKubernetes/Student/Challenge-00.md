@@ -42,4 +42,6 @@ If you plan to use the Azure Cloud Shell, you should upload the `Resources.zip` 
 1. Visual Studio Code is installed.
 
 
-Using __DevBox__ I have packaged all the required tools into a Git Repo which enables a portable shell with all the required tooling. [here](https://github.com/heathen1878/tooling)
+# Steps to complete
+
+1. Using __DevBox__ I have packaged all the required tools into a Git Repo which enables a portable shell with all the required tooling. [here](https://github.com/heathen1878/tooling)

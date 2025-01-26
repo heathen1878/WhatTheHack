@@ -93,6 +93,48 @@ When the deployment is complete, you can ssh into the build machine using port 2
 
 ## Learning Resources
 
-- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [How to Dockerize a Node.js application](https://buddy.works/guides/how-dockerize-node-application)
+- [Dockerising a Node.js web app](https://docs.docker.com/guides/nodejs/containerize/)
+- [How to Dockerise a Node.js application](https://buddy.works/guides/how-dockerize-node-application)
 - [Why and How To Containerize Modern Node.js Applications](https://www.cuelogic.com/blog/why-and-how-to-containerize-modern-nodejs-applications)
+
+
+# Steps to complete
+
+1. I am already running a Ubuntu desktop, so i have built the apps locally using a DevBox configuration.
+
+```shell
+cd ./WhatTheHack/001-IntroToKubernetes
+devbox shell
+# See devbox.json for installed applications
+
+cd Resources/Challenge-01
+
+cd content-api
+npm install
+
+node ./server.js &
+
+# Set the content api env var
+export CONTENT_API_URL="http://localhost:3001"
+
+cd ../content-web
+npm install
+node ./server.js &
+
+cd ../../
+
+# To kill off the locally running instances
+ps | grep node
+kill [pid]
+
+# Starting Docker containers locally
+docker compose -f Student/Resources/Challenge-01/dockercompose.yml up -d
+
+# Test
+# Browse to http://localhost:3000 and http://localhost:3001/speakers
+
+# Shutdown containers
+docker compose -f Student/Resources/Challenge-01/dockercompose.yml down
+```
+
+
